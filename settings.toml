@@ -1,0 +1,7 @@
+[camera]
+pid = 8963
+vid = 1659
+
+[logging]
+filename = "log.txt"
+
