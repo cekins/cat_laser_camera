@@ -7,7 +7,7 @@ import serial_port
 import log
 import config
 
-from .camera import Camera
+from ._camera import Camera
 from ._serial_connection import SerialConnection
 
 conf = config.load_conf()
@@ -19,4 +19,4 @@ class Test_packets(unittest.TestCase):
 
     def test_address_set(self):
         with SerialConnection(port) as conn:
-            conn.address_set()
+            conn._address_set()
